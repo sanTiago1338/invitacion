@@ -8,6 +8,8 @@ const GUESTS = {
   "528281":   { name:"Ismael Romero",                theme:"crimson", confetti:["#C84650","#E0A0A8","#82141E","#FF6070","#FFC0C8","#A03040"] },
   "15838984": { name:"Edward Solíz",                 theme:"indigo",  confetti:["#5A6EC8","#A8B4EE","#283C96","#7888FF","#C0C8FF","#4050B0"] },
   "9723296":  { name:"Enoc Poris",                   theme:"amber",   confetti:["#C8960A","#EAC870","#8C5A0A","#FFB820","#FFE080","#B07010"] },
+  "14112422": { name:"Alex Peñaranda",               theme:"gold",    confetti:["#C9A96E","#E8D5A3","#8B6914","#FFD700","#FFF8DC","#D4AF37"] },
+  "12392686": { name:"Vida mia",                   theme:"azure",   confetti:["#50A0DC","#A8D0F0","#1E5AA0","#7EC8E3","#B8E0FF","#3A8FC8"] },
 };
 
 const passwordInput = document.getElementById('passwordInput');
