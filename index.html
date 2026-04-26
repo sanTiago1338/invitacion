@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación Especial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="light-rays"><div class="ray"></div><div class="ray"></div><div class="ray"></div><div class="ray"></div><div class="ray"></div></div>
+  <div id="themeEffects"></div>
+  <div class="particles" id="particles"></div>
+  <div class="confetti-container" id="confetti"></div>
+  <div class="lock-screen" id="lockScreen">
+    <div class="lock-container">
+      <div class="lock-glow"></div>
+      <div class="lock-icon"><svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg></div>
+      <h1 class="lock-title">Invitación Privada</h1>
+      <p class="lock-subtitle">Ingresa tu número de carnet</p>
+      <input type="number" class="password-input" id="passwordInput" placeholder="N° de carnet" maxlength="20" autocomplete="off">
+      <button class="enter-btn" id="enterBtn">Ingresar</button>
+      <p class="error-msg" id="errorMsg">Número no encontrado. Intenta de nuevo.</p>
+      <p class="hint-text">Solo para invitados especiales ✦</p>
+    </div>
+  </div>
+  <div class="invitation-wrapper" id="invitationWrapper">
+    <div class="invitation" id="invitation">
+      <div class="bg-pattern"></div><div class="card-shimmer"></div>
+      <div class="corner corner-tl"><svg viewBox="0 0 60 60"><path d="M5 5 L5 25 Q5 15 15 15 L5 15 L5 5" fill="none" stroke-width="0.8"/><path d="M5 5 L25 5 Q15 5 15 15 L15 5 L5 5" fill="none" stroke-width="0.8"/><circle cx="5" cy="5" r="2" opacity="0.6"/><path d="M10 5 Q10 10 5 10" fill="none" stroke-width="0.5" opacity="0.5"/><path d="M18 5 Q18 18 5 18" fill="none" stroke-width="0.5" opacity="0.3"/></svg></div>
+      <div class="corner corner-tr"><svg viewBox="0 0 60 60"><path d="M5 5 L5 25 Q5 15 15 15 L5 15 L5 5" fill="none" stroke-width="0.8"/><path d="M5 5 L25 5 Q15 5 15 15 L15 5 L5 5" fill="none" stroke-width="0.8"/><circle cx="5" cy="5" r="2" opacity="0.6"/></svg></div>
+      <div class="corner corner-bl"><svg viewBox="0 0 60 60"><path d="M5 5 L5 25 Q5 15 15 15 L5 15 L5 5" fill="none" stroke-width="0.8"/><path d="M5 5 L25 5 Q15 5 15 15 L15 5 L5 5" fill="none" stroke-width="0.8"/><circle cx="5" cy="5" r="2" opacity="0.6"/></svg></div>
+      <div class="corner corner-br"><svg viewBox="0 0 60 60"><path d="M5 5 L5 25 Q5 15 15 15 L5 15 L5 5" fill="none" stroke-width="0.8"/><path d="M5 5 L25 5 Q15 5 15 15 L15 5 L5 5" fill="none" stroke-width="0.8"/><circle cx="5" cy="5" r="2" opacity="0.6"/></svg></div>
+      <div class="content" id="content">
+        <p class="subtitle-top">Estás cordialmente invitado/a</p>
+        <p class="guest-name" id="guestName"></p>
+        <div class="divider"><span class="divider-line"></span><span class="divider-diamond"></span><span class="divider-line"></span></div>
+        <p class="main-title">Al cumpleaños de</p>
+        <h1 class="name">Santos</h1>
+        <div class="age-section"><p class="age-label">Celebrando</p><p class="age-number">21</p><p class="age-text">años</p></div>
+        <div class="divider"><span class="divider-line"></span><span class="divider-diamond"></span><span class="divider-line"></span></div>
+        <div class="details-section">
+          <div class="detail-row"><div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg></div><div><p class="detail-label">Fecha</p><p class="detail-text">Jueves, 30 de Abril de 2026</p></div></div>
+          <div class="detail-row"><div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg></div><div><p class="detail-label">Hora</p><p class="detail-text">4:00 PM</p></div></div>
+          <div class="detail-row"><div class="detail-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div><div><p class="detail-label">Lugar</p><p class="detail-text">Condominio Buen Vivir 1</p></div></div>
+        </div>
+        <div class="countdown-section">
+          <p class="countdown-label">Faltan</p>
+          <div class="countdown">
+            <div class="countdown-item"><div class="countdown-number" id="days">--</div><div class="countdown-unit">Días</div></div>
+            <div class="countdown-item"><div class="countdown-number" id="hours">--</div><div class="countdown-unit">Horas</div></div>
+            <div class="countdown-item"><div class="countdown-number" id="minutes">--</div><div class="countdown-unit">Min</div></div>
+            <div class="countdown-item"><div class="countdown-number" id="seconds">--</div><div class="countdown-unit">Seg</div></div>
+          </div>
+        </div>
+        <p class="message">"Acompáñame a celebrar este día tan especial.<br>Tu presencia es el mejor regalo."</p>
+      </div>
+    </div>
+  </div>
+  <button class="music-btn" id="musicBtn"><svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg></button>
+  <script src="script.js"></script>
+</body>
+</html>
